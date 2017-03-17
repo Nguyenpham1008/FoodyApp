@@ -139,7 +139,7 @@ public class AnGiActivity extends AppCompatActivity {
         for (int i = 0; i < tabHost.getTabWidget().getChildCount(); i++) {
             TextView tv =  (TextView) tabHost.getTabWidget().getChildAt(i).findViewById(android.R.id.title);
             tv.setAllCaps(false);
-            tv.setTextSize(16);
+            tv.setTextSize(14);
         }
 
         lvDanhMuc = (ListView) findViewById(R.id.lvDanhMuc);

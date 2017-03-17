@@ -123,6 +123,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        btnLogo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,DanhMucActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 
@@ -163,7 +171,7 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 0; i < tabHost.getTabWidget().getChildCount(); i++) {
             TextView tv =  (TextView) tabHost.getTabWidget().getChildAt(i).findViewById(android.R.id.title);
             tv.setAllCaps(false);
-            tv.setTextSize(16);
+            tv.setTextSize(14);
         }
 
 

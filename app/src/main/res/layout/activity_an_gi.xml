@@ -11,8 +11,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:background="@android:color/holo_red_dark"
-        android:layout_height="57dp">
+        android:layout_height="39dp"
+        android:background="@android:color/holo_red_dark">
 
         <ImageButton
             android:layout_width="50dp"
@@ -51,7 +51,7 @@
             android:layout_width="match_parent"
             android:layout_height="443dp"
             android:id="@+id/tabHost"
-            android:layout_weight="0.52">
+            android:layout_weight="1.80">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -61,7 +61,7 @@
                 <TabWidget
                     android:id="@android:id/tabs"
                     android:layout_width="match_parent"
-                    android:layout_height="49dp"
+                    android:layout_height="38dp"
                     android:textAllCaps="false"
                     />
 
@@ -76,11 +76,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical"
-                        android:weightSum="1">
+                        android:weightSum="1"
+                        >
 
                         <ListView
                             android:layout_width="match_parent"
-                            android:layout_height="fill_parent"
+                            android:layout_height="match_parent"
                             android:id="@+id/lvMoiNhat"
                             android:background="#EEEEEE"
                             android:layout_weight="0.51" />
@@ -95,7 +96,7 @@
 
                         <ListView
                             android:layout_width="match_parent"
-                            android:layout_height="fill_parent"
+                            android:layout_height="match_parent"
                             android:id="@+id/lvDanhMuc"
                             android:background="#EEEEEE"/>
 
@@ -109,7 +110,7 @@
 
                         <ListView
                             android:layout_width="match_parent"
-                            android:layout_height="fill_parent"
+                            android:layout_height="match_parent"
                             android:id="@+id/lvTinhThanh"
                             android:background="#EEEEEE"/>
 
@@ -120,13 +121,16 @@
         </TabHost>
 
         <Button
-            android:text="Hủy bỏ"
+            android:text="Hủy"
             android:textAllCaps="false"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btnHuyAnGI"
             android:layout_weight="0.52"
-            android:background="@android:color/transparent" />
+            android:background="@android:color/transparent"
+            android:gravity="top|center_vertical|center_horizontal"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp" />
 
     </LinearLayout>
 </LinearLayout>

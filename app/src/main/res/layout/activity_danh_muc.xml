@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_danh_muc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.nguyenpham.foody.DanhMucActivity"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:background="@android:color/holo_red_dark">
+
+        <ImageButton
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/buttonback"
+            android:id="@+id/imageButton"
+            android:layout_alignParentBottom="true"
+            android:layout_width="40dp" />
+
+        <TextView
+            android:text="Danh Mục"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageButton"
+            android:layout_toEndOf="@+id/imageButton"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp"
+            android:id="@+id/textView"
+            android:textColor="@android:color/background_light"
+            android:textStyle="normal|bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:text="Khám phá"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_weight="0.08"
+        android:gravity="bottom|center"
+        android:textColor="@android:color/black" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="101dp"
+        android:background="?android:attr/detailsElementBackground">
+
+        <ImageButton
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/backgroud"
+            android:id="@+id/btnbg"
+            android:layout_weight="1"
+            android:layout_width="30dp"
+            android:background="?android:attr/detailsElementBackground"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/anuong"
+            android:id="@+id/btnAnUong"
+            android:layout_weight="1"
+            android:background="?android:attr/detailsElementBackground" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/dulich"
+            android:id="@+id/btnDuLich"
+            android:layout_weight="1"
+            android:background="?android:attr/detailsElementBackground"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/cuoihoi"
+            android:id="@+id/btnCuoiHoi"
+            android:layout_weight="1"
+            android:background="?android:attr/detailsElementBackground"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/depkhoe"
+            android:id="@+id/btnDepKhoe"
+            android:layout_weight="1"
+            android:background="?android:attr/detailsElementBackground"/>
+
+        <ImageButton
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/backgroud"
+            android:id="@+id/btnbg2"
+            android:layout_weight="1"
+            android:layout_width="30dp"
+            android:background="?android:attr/detailsElementBackground"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="101dp">
+
+        <ImageButton
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/backgroud"
+            android:id="@+id/imageButton4"
+            android:layout_weight="1"
+            android:layout_width="30dp"
+            android:background="?android:attr/detailsElementBackground"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/giaitri"
+            android:id="@+id/btnGiaiTri"
+            android:layout_weight="1"
+            android:background="?android:attr/detailsElementBackground"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/muasam"
+            android:id="@+id/btnMuaSam"
+            android:layout_weight="1"
+            android:background="?android:attr/detailsElementBackground"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/giaoduc"
+            android:id="@+id/btnGiaoDuc"
+            android:layout_weight="1"
+            android:background="?android:attr/detailsElementBackground"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/dichvu"
+            android:id="@+id/btnDichVu"
+            android:layout_weight="1"
+            android:background="?android:attr/detailsElementBackground"/>
+
+        <ImageButton
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/backgroud"
+            android:id="@+id/imageButton8"
+            android:layout_weight="1"
+            android:layout_width="30dp"
+            android:background="?android:attr/detailsElementBackground"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/mission_philosophy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_weight="0.14"
+        android:gravity="bottom|center"
+        android:textColor="@android:color/background_dark" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="?android:attr/detailsElementBackground">
+
+        <ImageButton
+            android:layout_width="29dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/backgroud"
+            android:id="@+id/imageButton18"
+            android:textColor="@android:color/background_dark"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/logodelivery"
+            android:id="@+id/btnLogoDelivery"
+            android:layout_weight="1"
+            android:textColor="@android:color/background_dark"
+            android:background="?android:attr/detailsElementBackground" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/logotablenow"
+            android:id="@+id/btnLogoTableNow"
+            android:layout_weight="1"
+            android:textColor="@android:color/background_dark"
+            android:background="?android:attr/detailsElementBackground" />
+
+        <ImageButton
+            android:layout_width="29dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/backgroud"
+            android:id="@+id/imageButton19"
+            android:textColor="@android:color/background_dark"/>
+    </LinearLayout>
+
+</LinearLayout>
