@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.nguyenpham.foody.MainActivity"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@android:color/holo_red_dark"
+        android:layout_height="57dp">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/logo"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/btnlogo"
+            android:layout_alignParentBottom="true" />
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/logoplus"
+            android:id="@+id/btnAdd"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/menuangi"
+            android:id="@+id/btnMenuAnGi"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="120dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <TabHost
+            android:layout_width="match_parent"
+            android:layout_height="443dp"
+            android:id="@+id/tabHost"
+            android:layout_weight="0.52">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:textAllCaps="false"
+                    />
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/tab1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <ListView
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:id="@+id/lvMoiNhat"
+                            android:background="#EEEEEE"
+                            android:layout_weight="0.51" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tab2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ListView
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:id="@+id/lvDanhMuc"
+                            android:background="#EEEEEE"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tab3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ListView
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:id="@+id/lvTinhThanh"
+                            android:background="#EEEEEE"/>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+
+        <Button
+            android:text="Hủy bỏ"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnHuyAnGI"
+            android:layout_weight="0.52"
+            android:background="@android:color/transparent" />
+
+    </LinearLayout>
+</LinearLayout>
